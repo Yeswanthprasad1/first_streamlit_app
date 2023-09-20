@@ -46,6 +46,7 @@ if streamlit.button('grt fruit load list'):
     my_data_rows= get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+streamlit.stop()
 fruit_choicees = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 streamlit.write('Thanks for adding ', fruit_choicees)
 
